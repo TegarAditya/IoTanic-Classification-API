@@ -1,11 +1,11 @@
-FROM python:3.10
+FROM python:3.11.1-slim
 
-WORKDIR /code
+WORKDIR /app
 
-COPY ./requirements.txt /code/requirements.txt
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
 
-RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
+COPY requirements.txt .
+RUN pip install -r requirements.txt
 
-COPY ./app /code/app
-
-CMD ["fastapi", "run", "app/main.py", "--port", "7000"]
+COPY . .
