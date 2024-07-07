@@ -1,0 +1,17 @@
+# Test your FastAPI endpoints
+
+GET http://127.0.0.1:7000/ping
+Accept: application/json
+
+###
+POST http://localhost:7000/predict
+Content-Type: multipart/form-data; boundary=--boundary
+
+file
+--boundary
+Content-Disposition: form-data; name="file"; filename="test.jpg"
+Content-Type: image/jpeg
+
+< ./images/test.jpg
+--boundary--
+

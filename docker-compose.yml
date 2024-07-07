@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  fastapi_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fastapi_app
+    ports:
+      - "7000:7000"
+    volumes:
+      - ./app:/app/app
+    environment:
+      - MODEL_PATH=/app/app/model.h5
+    restart: unless-stopped
