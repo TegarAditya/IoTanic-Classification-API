@@ -1,6 +1,8 @@
 tensorflow
 fastapi
 uvicorn
+gunicorn
+waitress
 python-multipart
 pillow
 tensorflow-serving-api

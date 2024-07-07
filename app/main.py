@@ -19,7 +19,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-MODEL = tf.keras.models.load_model("model.h5", compile=False)
+MODEL = tf.keras.models.load_model("./model.h5", compile=False)
 
 CLASS_NAMES = ["Healthy Rice Leaf", "Bacterial Leaf Blight", "Brown Spot", "Leaf Blast", "Leaf Scald",
                "Narrow Brown Leaf Spot", "Rice Hispa", "Sheath Blight"]
