@@ -50,7 +50,7 @@ async def predict(
             'class': predicted_class,
             'confidence': float(confidence)
         }
-    except:
+    finally:
         return {
             'class': 'N/A',
             'confidence': 'N/A'
