@@ -31,8 +31,22 @@ async def ping():
 
 
 def read_file_as_image(data) -> np.ndarray:
-    image = np.array(Image.open(BytesIO(data)))
-    return image
+    try:
+        image = Image.open(BytesIO(data))
+
+        if image.mode != "RGB":
+            image = image.convert("RGB")
+
+        if image.format != "JPEG":
+            buffer = BytesIO()
+            image.save(buffer, format="JPEG")
+            buffer.seek(0)
+            image = Image.open(buffer)
+
+        return np.array(image)
+    except Exception as e:
+        print(f"Error in image processing: {e}")
+        raise
 
 
 @app.post("/predict")
@@ -50,7 +64,8 @@ async def predict(
             'class': predicted_class,
             'confidence': float(confidence)
         }
-    finally:
+    except Exception as e:
+        print(e)
         return {
             'class': 'N/A',
             'confidence': 'N/A'
