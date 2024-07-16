@@ -30,6 +30,8 @@ MODEL = tf.keras.models.load_model("./model.h5", compile=False)
 CLASS_NAMES = ["Healthy Rice Leaf", "Bacterial Leaf Blight", "Brown Spot", "Leaf Scald", "Leaf Blast",
                "Narrow Brown Leaf Spot", "Rice Hispa", "Sheath Blight"]
 
+supported_content_types = ["image/jpeg", "image/png", "image/webp", "image/avif"]
+
 
 @app.get("/ping")
 async def ping():
@@ -59,7 +61,7 @@ def read_file_as_image(data) -> np.ndarray:
 async def predict(
         file: UploadFile = File(...)
 ):
-    if "image/" not in file.content_type:
+    if file.content_type not in supported_content_types:
         raise HTTPException(
             status_code=status.HTTP_415_UNSUPPORTED_MEDIA_TYPE,
             detail=f'File {file.filename} has unsupported extension type',
