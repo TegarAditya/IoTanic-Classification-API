@@ -21,10 +21,11 @@
     python ./app/main.py
     ```
    Or you can use uvicorn
-    > Use `--reload` flag to enable auto-reload on code changes
     ```zsh
     uvicorn app.main:app --port 8000 --reload
     ```
+   > Use `--reload` flag to enable auto-reload on code changes
+
 4. Open local API docs [http://localhost:8000/docs](http://localhost:7000/docs)
 
 ### Using Docker
@@ -33,7 +34,7 @@
     docker compose build
     ```
 2. Run Docker container
-    > Use `-d` flag to run in detached mode
     ```zsh
     docker compose up -d
     ```
+   > Use `-d` flag to run in detached mode
