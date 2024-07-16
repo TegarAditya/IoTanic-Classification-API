@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4316e20e-7ae8-4fec-b4fd-410656f96e35" name="Changes" comment="feat: adding image converter">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="4316e20e-7ae8-4fec-b4fd-410656f96e35" name="Changes" comment="feat: ability to read .env files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +41,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -108,7 +106,9 @@
       <workItem from="1720585811715" duration="252000" />
       <workItem from="1720586076846" duration="234000" />
       <workItem from="1720590419192" duration="3886000" />
-      <workItem from="1720613416977" duration="6005000" />
+      <workItem from="1720613416977" duration="11202000" />
+      <workItem from="1720939970995" duration="898000" />
+      <workItem from="1721097203373" duration="1065000" />
     </task>
     <task id="LOCAL-00001" summary="Reconfigure .idea configuration">
       <option name="closed" value="true" />
@@ -134,7 +134,23 @@
       <option name="project" value="LOCAL" />
       <updated>1720585942868</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: adding ignore files">
+      <option name="closed" value="true" />
+      <created>1720669693364</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720669693364</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: ability to read .env files">
+      <option name="closed" value="true" />
+      <created>1720669746132</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720669746132</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,9 +174,11 @@
     <MESSAGE value="Reconfigure .idea configuration" />
     <MESSAGE value="Change to finally clause" />
     <MESSAGE value="feat: adding image converter" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: adding image converter" />
+    <MESSAGE value="feat: adding ignore files" />
+    <MESSAGE value="feat: ability to read .env files" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: ability to read .env files" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/IoTanic_Classification_API$main.coverage" NAME="main Coverage Results" MODIFIED="1720669122784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/IoTanic_Classification_API$main.coverage" NAME="main Coverage Results" MODIFIED="1720696671359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
   </component>
 </project>
