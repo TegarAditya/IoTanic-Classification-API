@@ -2,7 +2,6 @@ tensorflow
 python-dotenv
 fastapi
 uvicorn
-gunicorn
 waitress
 python-multipart
 pillow
