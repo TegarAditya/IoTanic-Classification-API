@@ -12,6 +12,7 @@
     ```zsh
     pip install -r requirements.txt
     ```
+   > It is recommended to use a [virtual environment](https://docs.python.org/3/library/venv.html).
 2. Copy .env.example to .env
     ```zsh
     cp .env.example .env

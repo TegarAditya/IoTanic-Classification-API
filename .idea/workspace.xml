@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4316e20e-7ae8-4fec-b4fd-410656f96e35" name="Changes" comment="feat: ability to read .env files" />
+    <list default="true" id="4316e20e-7ae8-4fec-b4fd-410656f96e35" name="Changes" comment="doc: move captions">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +149,23 @@
       <option name="project" value="LOCAL" />
       <updated>1720669746132</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix: gunicorn not required">
+      <option name="closed" value="true" />
+      <created>1721174091257</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721174091257</updated>
+    </task>
+    <task id="LOCAL-00007" summary="doc: move captions">
+      <option name="closed" value="true" />
+      <created>1721174247277</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721174247277</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +191,9 @@
     <MESSAGE value="feat: adding image converter" />
     <MESSAGE value="feat: adding ignore files" />
     <MESSAGE value="feat: ability to read .env files" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: ability to read .env files" />
+    <MESSAGE value="fix: gunicorn not required" />
+    <MESSAGE value="doc: move captions" />
+    <option name="LAST_COMMIT_MESSAGE" value="doc: move captions" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IoTanic_Classification_API$main.coverage" NAME="main Coverage Results" MODIFIED="1721173881915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
