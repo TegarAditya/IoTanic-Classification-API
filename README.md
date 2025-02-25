@@ -39,3 +39,7 @@
     docker compose up -d
     ```
    > Use `-d` flag to run in detached mode
+
+
+## About Model Used on This Repository
+Please refer to the [ngaeninurul/model-cnn-ta](https://github.com/ngaeninurul/model-cnn-ta) repository to view the source code of the models used.
